@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>GameBoy</title>
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+	<link rel="stylesheet" href="./css/main.css">
+	<script src="./js/main.js"></script>
+</head>
+<body>
+	<p>INSTRUCCIONES <br>
+	Play boton A <br>
+	Pause boton B</p>
+	<div class="gb__container">
+		<div class="gb__screen">
+			<div class="gb__game">
+				<video id="video" src="https://dl.dropboxusercontent.com/u/43885861/pokemonGB/pokemon-red.mp4"></video>
+			</div>
+		</div>
+		<div class="gb__text">NINTENDO <span>GAME BOY</span> TM</div>
+		<div class="gb__controller">
+			<div class="gb__btnup">
+				<div class="gb__pad">
+					<div class="pad__rows"></div>
+				</div>
+				<div class="gb__buttons">
+					<div onclick="start()" class="btn">A</div>
+					<div onclick="pause()" class="btn">B</div>
+				</div>
+			</div>
+			<div class="gb__btndown">
+				<div class="btn__option"></div>
+				<div class="btn__option"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
